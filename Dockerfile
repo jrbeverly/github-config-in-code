@@ -1,0 +1,2 @@
+# ubuntu:jammy-20220130
+FROM ubuntu@sha256:2d526d53ef508835ab068af317a0b006a416fdded7d66e5b31c8aa6fbe006060 
