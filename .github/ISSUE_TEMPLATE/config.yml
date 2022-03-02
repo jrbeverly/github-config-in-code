@@ -1,0 +1,10 @@
+contact_links:
+  - name: Configuration help?
+    url: https://github.com/jrbeverly/github-config-incode/discussions/new
+    about: Please create a discussion.
+  - name: Environment help?
+    url: https://github.com/jrbeverly/github-config-incode/discussions/new
+    about: Please open a ticket.
+  - name: Security concern?
+    url: https://github.com/jrbeverly/github-config-incode/discussions/new
+    about: Please read the repository security organization

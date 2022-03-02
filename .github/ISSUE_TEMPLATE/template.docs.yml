@@ -1,0 +1,18 @@
+name: Documentation issue
+description: Report a documentation issue
+title: "Docs issue: "
+labels: ["Documentation"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: "URL to the documentation page"
+      placeholder: "https://github.com/jrbeverly/github-config-in-code"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What's the issue?"
+    validations:
+      required: true
