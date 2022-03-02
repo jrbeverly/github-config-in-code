@@ -16,11 +16,6 @@ jobs:
       issues: write
       contents: read
     steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@bdb12b622a910dfdc99a31fdfe6f45a16bc287a4 # v1
-        with:
-          egress-policy: block
-
       - uses: actions/checkout@b0e28b5ac45a892f91e7d036f8200cf5ed489415 # v3 # v2.4.0
       - uses: crazy-max/ghaction-github-labeler@52525cb66833763f651fc34e244e4f73b6e07ff5 # v3
         with:
