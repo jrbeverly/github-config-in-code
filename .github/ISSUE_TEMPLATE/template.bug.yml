@@ -1,0 +1,57 @@
+name: Bug
+description: Report a bug
+title: "Bug: "
+labels: ["Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: urgent
+    attributes:
+      label: Is this urgent?
+      description: |
+        Is this a critical bug, or do you need this fixed urgently?
+        If this is urgent, note you can use one of the experimental/unstable releases if that can help.
+      options:
+        - "No"
+        - "Yes"
+  - type: input
+    id: host-os
+    attributes:
+      label: Host OS
+      description: What is your host OS?
+      placeholder: "Debian Buster"
+  - type: dropdown
+    id: cpu-arch
+    attributes:
+      label: CPU arch
+      description: You can find it on Linux with `uname -m`.
+      options:
+        - x86_64
+        - aarch64
+        - armv7l
+        - "386"
+        - s390x
+        - ppc64le
+  - type: dropdown
+    id: docker
+    attributes:
+      label: What are you using to run the container
+      options:
+        - docker run
+        - docker-compose
+        - Portainer
+        - Kubernetes
+        - Podman
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What's the problem?"
+      placeholder: "That feature does not work..."
+    validations:
+      required: true
