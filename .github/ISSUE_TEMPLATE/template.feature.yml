@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest a feature to add to Gluetun
+title: "Feature request: "
+labels: ["Feature request"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "What's the feature?"
+      placeholder: "Support the ability to work with"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Extra information and references"
+      placeholder: |
+        - I tried running the command `...` and it doesn't work
