@@ -1,0 +1,21 @@
+name: CI - Main
+permissions: read-all
+
+on:
+  release:
+    types:
+      - published
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_BUILDKIT: "1"
+    steps:
+      - uses: actions/checkout@b0e28b5ac45a892f91e7d036f8200cf5ed489415 # v3
+
+      - name: Build final image
+        run: docker build -t final-image .
